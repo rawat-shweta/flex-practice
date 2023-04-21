@@ -1,0 +1,373 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    padding: 40px;
+}
+
+.fav-btn {
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid grey;
+}
+
+.fav-btn button {
+    padding: 5px 0px;
+    width: 60px;
+    border: none;
+}
+
+.fav-btn span {
+    padding: 0px 10px;
+    color: black;
+}
+
+.icon {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.icon .btn {
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    background-color: #6334d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.building {
+    padding: 25px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brands {
+    width: 50%;
+    padding-top: 50px;
+}
+
+.building h2 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.building p {
+    padding-top: 20px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: arial;
+    color: #8a8f99;
+    padding-bottom: 50px;
+}
+
+.button {
+    padding: 10px;
+    border: none;
+    height: 45px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #242a37;
+}
+
+.building ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.building i {
+    font-weight: bolder;
+}
+
+.poster {
+    padding-left: 40px;
+}
+
+footer {
+    padding: 0px 65px;
+    color: #6c727f;
+}
+
+footer ul {
+    justify-content: space-between;
+    display: flex;
+    list-style-type: none;
+}
+
+footer ul li {
+    padding-top: 25px;
+    font-family: arial;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+footer ul li i {
+    font-weight: bolder;
+}
+
+.mash {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+
+
+/* /////////media-query for responsive////// */
+
+@media only screen and (max-width:550px){
+    body{
+        overflow-x: hidden !important; /* Hide horizontal scrollbar */
+        overflow-y: scroll !important; /* Add vertical scrollbar */
+        scroll-behavior: smooth !important;
+    }
+   .icon .fav-btn {
+        display: none;
+    }
+    .icon .btn{
+        margin-left: 40px;
+    }
+    .navbar {
+        align-items: center !important;
+        justify-content: left !important;
+        padding: 0.5rem 0.5rem;
+    }
+    .navbar-toggler {
+        margin-right: 5%;
+    }
+    .icon {
+        margin-left: 5%;
+    }
+    .building {
+        padding: 0px;
+        display: block;
+    }
+    .brands {
+        width: auto;
+        padding-top: 0px;
+    }
+    .brands h2 {
+        text-align: center !important;
+        padding-top: 10%;
+    }
+    .brands p {
+        text-align: center;
+        padding: 0px 10px;
+    }
+    
+    .brands ul {
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .brands ul li {
+        margin-right: 2%;
+    }
+    .poster img {
+        width: 100%;
+        margin-top:-15% ;
+    }
+    footer ul {
+        display: block;
+        list-style-type: none;
+        text-align: left;
+        padding-left: 85px;
+    }
+}
+
+@media only screen and (min-width:551px) and (max-width:575px){
+    .navbar{
+        width: 100% !important;
+    }
+    .building {
+        padding: 0px;
+        display: block;
+    }
+    .brands {
+        width: auto;
+        padding-top: 0px;
+    }
+    .brands h2 {
+        text-align: center;
+    }
+    .brands p {
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .brands ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .poster img {
+        width: 100%;
+    }
+    footer ul {
+        display: block;
+        list-style-type: none;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+@media only screen and (min-width:576px) and (max-width:600px){
+
+.fav-btn {
+    width: max-content;
+}
+.building {
+    padding: 0px;
+    display: block;
+}
+.brands {
+    width: auto;
+    padding-top: 0px;
+}
+.brands h2 {
+   text-align: center;
+}
+.brands p {
+    text-align: center;
+    padding: 0px 10px;
+}
+.brands ul {
+    display: flex;
+    justify-content: space-around;
+}
+.poster img {
+   width: 100%;
+ }
+footer ul {
+    display: block;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+}
+}
+
+@media only screen and (min-width:601px) and (max-width:767px){
+ 
+    .building {
+        padding: 0px;
+        display: block;
+    }
+    .brands {
+        width: auto;
+        padding-top: 0px;
+    }
+    .brands h2 {
+        text-align: center;
+    }
+    .brands p {
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .brands ul {
+        display: flex;
+        justify-content: space-evenly !important;
+    }
+    .poster img {
+        width: 100%;
+        margin-top:-18% ;
+    }
+    footer ul {
+        display: grid;
+        line-height: 50px;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1051px){
+    .navbar{
+        width: 100% !important;
+    }
+
+    #mymenu ul{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .nav-link{
+       margin: 0px -2.5px;
+    }
+    .fav-btn {
+        width: max-content;
+    }
+    .building {
+        padding: 0px 25px;
+        display: flex;
+        justify-content: start;
+    }
+    .building h2{
+        font-size: 30px;
+    }
+    .brands{
+        width: 100%;
+        padding: 0px;
+    }
+    .poster img {
+        width: 100%;
+        margin-top:25px;
+    }
+    footer ul {
+        display: grid;
+        list-style-type: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+     }
+
+
+    
+  
+}
+
+
+
+@media only screen and (max-width:992px){
+    .brands h2{
+        text-align:center;
+    }
+    .brands p{
+        text-align:left;
+        padding-left: 30px;
+    }
+    .poster img{
+        padding-top: 20%;
+    }
+    .brands ul {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width:1045px){
+    .poster img{
+      padding-top: 20% !important;
+    }
+    footer{
+     padding: 0px 20px;
+    }
+    footer ul li{
+      padding: 0px 5px;
+    }
+}
+ 
+@media only screen and (max-width:1190px){
+    footer{
+       padding: 0px 15px;
+    }
+    footer ul li{
+        padding: 0px 8px;
+    }
+
+}
+
